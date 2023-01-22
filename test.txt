@@ -1,0 +1,25 @@
+? Hello World.
+
+@ int,int @ ciao (int x) {
+	int a;
+	a<-15++x;
+	return a,a;
+}
+
+@ bool @ main () {
+	int a;
+	int c;
+	c,a <- 100,200;
+	loop $ a<<202 ${
+		@ writeChar('v');
+		@ writeChar(' ');
+		a<-a++1;
+	}
+	@ writeInt(a);
+	@ writeChar(' ');
+	@ writeInt(c);
+	@ writeChar(' ');
+	a,c <- @ ciao(a);
+	@ writeInt(a++c);
+	return FALSE;
+}
