@@ -4,6 +4,7 @@ This language allows for:
 * Multiple assignment
 * Statically-typed multi-return functions
 
+
 The project provides a compiler for the language, and it is built on top of the TAM machine specification. Therefore, when a source file is read, an output file is generated, and it contains a sequence of assembly instructions to be run by the TAM machine.
 AST, grammar and a glossary explaining the language specification are provided for convenience.
 ## Note ##
